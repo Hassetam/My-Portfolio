@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- contact.html: Contact page with form and social media links -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,13 +25,13 @@
         <!-- creating a form to collect user information -->
         <form action="#" method="get">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required><br><br> <!-- required attribute makes the field mandatory -->
+            <input type="text" id="name" name="Name" placeholder="Enter your full name" required> <br><br> <!-- required attribute makes the field mandatory -->
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br> <!-- email input type for validation -->
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br> <!-- email input type for validation -->
 
             <label for="phone number">Phone number:</label>
-            <input type="tel" id="phone-number" name="phone number"required ><br><br> <!-- tel input type for phone number -->
+            <input type="tel" id="phone-number" name="phone number" placeholder="Enter your phone number" required ><br><br> <!-- tel input type for phone number -->
 
             <label>Gender:</label>
             <input type="radio" id= "male" name="Gender" value="M" required>
@@ -39,16 +39,18 @@
             <input type="radio" id="female" name="Gender" value="F" required>
             <label for="female">F</label><br><br> <!-- radio buttons --->
 
+            <!--- checkbox for a better understanding of reason of contact--->
             <label for="Reason for contact">Reason for contact:</label>
-            <input type="checkbox" id="inquiry" name="Reason for contact" value="inquiry">
+            <input type="checkbox" id="inquiry" name="Reason[]"value="inquiry">
             <label for="inquiry">Inquiry</label>
-            <input type="checkbox" id="feedback" name="Reason for contact" value="feedback">
+            <input type="checkbox" id="feedback" name="Reason[]" value="feedback">
             <label for="feedback">Feedback</label>
-            <input type="checkbox" id="support" name="Reason for contact" value="support">
+            <input type="checkbox" id="support" name="Reason[]" value="support">
             <label for="support">Support</label>
-            <input type="checkbox" id="other" name="Reason for contact" value="other">
-            <label for="other">Other</label><br><br> <!--- checkbox for a better understanding of reason of contact--->
-            
+            <input type="checkbox" id="other" name="Reason[]" value="other">
+            <label for="other">Other</label><br><br>
+            <!-- Using name="Reason[]" allows the user to select multiple options.Each checkbox has a unique id for the associated <label>.This improves accessibility and ensures all selected values are submitted as an array. -->
+
             <label for="Preferred method of contact">Preferred method of contact:</label>
             <select id="Preferred method of contact" name="Preferred method of contact" required>
                 <option value="none" disabled selected> --- please select---</option>
@@ -57,7 +59,7 @@
                 <option value="social">social media(Please write your contact address)</option> 
             </select> <!-- dropdown menu for preferred method of contact -->
             <label for="social media address">Social media address:</label>
-            <input type="text" id="social media address" name="social media address"><br><br> <!-- optional field for social media address -->
+            <input type="text" id="social media address" name="social media address" placeholder="Your social media address"><br><br> <!-- optional field for social media address -->
 
             <label for="Rating">What would you rate this website:</label>
             <input type="range" id="Rating" name="Rating" min="1" max="10"><br><br> <!-- range input for rating from 1 to 10 -->
