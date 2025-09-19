@@ -9,11 +9,11 @@
     <header>
         <h1>Contact me</h1>
         <nav>
-            <a href="index.html">
+            <a href="index.html"> 
                     <img src="images/Home page.jpg" width = "60" height= "40" alt ="Home">
-                </a>
-            <a href="about.html">About</a><br><br>
-            <a href="#address">contact address</a>
+                </a> <!-- internal link to home page -->
+            <a href="about.html">About</a><br><br> <!-- internal link to about page -->
+            <a href="#address">contact address</a> <!-- internal bookmark to contact address in the footer -->
         </nav>
     </header>
 
@@ -21,22 +21,23 @@
         <h2>Get in touch</h2>
         <p> I would love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to me through the form below or through my <strong>Contact Address</strong> just by clicking. Your messages are important to me, and I will do my best to respond as soon as possible. Thank you for visiting my portfolio!</p>
 
-        <h3>Please fill out the form below to contact me:</h3> 
+        <h3>Please fill out the form below to contact me:</h3> <!-- heading for the form -->
+        <!-- creating a form to collect user information -->
         <form action="#" method="get">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required><br><br>
+            <input type="text" id="name" name="Name" required><br><br> <!-- required attribute makes the field mandatory -->
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required><br><br> <!-- email input type for validation -->
 
             <label for="phone number">Phone number:</label>
-            <input type="tel" id="phone-number" name="phone number"required ><br><br>
+            <input type="tel" id="phone-number" name="phone number"required ><br><br> <!-- tel input type for phone number -->
 
             <label>Gender:</label>
             <input type="radio" id= "male" name="Gender" value="M" required>
             <label for="male">M</label>
             <input type="radio" id="female" name="Gender" value="F" required>
-            <label for="female">F</label><br><br>
+            <label for="female">F</label><br><br> <!-- radio buttons --->
 
             <label for="Reason for contact">Reason for contact:</label>
             <input type="checkbox" id="inquiry" name="Reason for contact" value="inquiry">
@@ -46,34 +47,37 @@
             <input type="checkbox" id="support" name="Reason for contact" value="support">
             <label for="support">Support</label>
             <input type="checkbox" id="other" name="Reason for contact" value="other">
-            <label for="other">Other</label><br><br>
+            <label for="other">Other</label><br><br> <!--- checkbox for a better understanding of reason of contact--->
             
             <label for="Preferred method of contact">Preferred method of contact:</label>
             <select id="Preferred method of contact" name="Preferred method of contact" required>
                 <option value="none" disabled selected> --- please select---</option>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
-                <option value="social">social media(Please write your contact address)</option>
-            </select>
+                <option value="social">social media(Please write your contact address)</option> 
+            </select> <!-- dropdown menu for preferred method of contact -->
             <label for="social media address">Social media address:</label>
-            <input type="text" id="social media address" name="social media address"><br><br>
+            <input type="text" id="social media address" name="social media address"><br><br> <!-- optional field for social media address -->
 
             <label for="Rating">What would you rate this website:</label>
-            <input type="range" id="Rating" name="Rating" min="1" max="10"><br><br>
+            <input type="range" id="Rating" name="Rating" min="1" max="10"><br><br> <!-- range input for rating from 1 to 10 -->
 
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"> <!-- submit button to send the form -->
+            <input type="reset" value="Reset"> <!-- reset button to clear the form -->
         </form>
     </section>
 
     <footer>
-        <h3 id="address">Connect with me:</h3>
+        <h3 id="address">Connect with me:</h3> <!-- internal bookmark to contact address -->
+        <!-- external links to social media profiles with icons -->
+        <!--opens in new browser tab keeping my portfolio open-->
 
-        <a href="mailto:adugnahasset@gmail.com" target="_blank" title="contact me via email">
+        <a href="mailto:adugnahasset@gmail.com" target="_blank"title="contact me via email">
             <img src="images/email.jpg" alt="email" width="30" height="30">
-        </a>&nbsp
+        </a>&nbsp <!-- non-breaking space for spacing between icons -->
 
         <a href="https://github.com/Hassetam" target="_blank" title="visit my GitHub profile">
             <img src="images/github.jpg" alt="GitHub" width="30" height="30">
@@ -89,8 +93,8 @@
 
         <a href="https://www.instagram.com/hassuki.15/" target="_blank" title="contact me via instagram">
             <img src="images/instagram.jpg" alt="Instagram" width="30" height="30">
-        </a>&nbsp
-        <p> &copy; 2024 Hasset Adugna </p>
+        </a>&nbsp 
+        <p> &copy; 2024 Hasset Adugna </p> <!--copyright notice-->
     </footer>
   
 </body>
